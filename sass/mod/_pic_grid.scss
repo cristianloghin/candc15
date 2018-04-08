@@ -1,0 +1,40 @@
+.mod_shared_pic_grid {
+	.row {
+		width: 100%;
+		clear: both;
+		.image-wrapper {
+			width: 48%;
+			float: left;
+			.image {
+				width: 100%;
+				overflow: hidden;
+				border-radius: $base-line-height;
+				-webkit-border-radius: $base-line-height;
+				-moz-border-radius: $base-line-height;
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+			.caption {
+				padding-top: $base-line-height / 2;
+				p {
+					font-size: .875em;
+					line-height: $base-line-height * .875;
+				}
+			}
+		}
+		.image-wrapper:last-child {
+			float: right;
+		}
+	}
+	.row + .row {
+		padding-top: $base-line-height;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.mod_shared_pic_grid {
+	
+	}
+}

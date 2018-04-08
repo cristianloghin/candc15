@@ -1,0 +1,71 @@
+.mod_shared_info_2 {
+	position: relative;
+	padding-bottom: 25px;
+	h3 {
+		margin-bottom: $base-line-height;
+		position: relative;
+		z-index: 3;
+	}
+	.rows {
+		position: relative;
+		z-index: 2;
+		.row {
+			.v-label {
+				float: left;
+				width: 10%;
+				line-height: $base-line-height * 2;
+				height: $base-line-height * 2;
+				font-size: 1.125em;
+			}
+			.bar {
+				width: 90%;
+				float: left;
+				height: $base-line-height * 2;
+				span {
+					display: block;
+					height: $base-line-height;
+					margin-top: $base-line-height * .5;
+					background: $light_background;
+				}
+			}
+			.bar.active {
+				span {
+					background: $grass_green;
+				}
+			}
+		}
+	}
+	.grid {
+		position: absolute;
+		left: 0;
+		top: 40px;
+		width: 100%;
+		height: $base-line-height * 10;
+		.column {
+			position: relative;
+			height: 100%;
+			float: left;
+			span:first-child {
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				display: block;
+				bottom: 0;
+				right: 0;
+				background: $light_background;
+			}
+			span:last-child {
+				position: absolute;
+				bottom: -25px;
+				right: 0;
+				font-size: .875em;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.mod_shared_info_2 {
+	
+	}
+}

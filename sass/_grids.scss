@@ -1,0 +1,33 @@
+// Requirements
+// ============
+
+@import "susy";
+
+
+$susy: (
+	columns: 6,
+	gutters: 1/4,
+	global-box-sizing: border-box,
+	container: 90%
+);
+
+@include border-box-sizing;
+
+.container {
+	@include container;
+	@include clearfix;
+	overflow: visible;
+}
+
+@include susy-breakpoint(64em) {
+	.container {
+		@include container(8);
+	}
+}
+
+@include susy-breakpoint(80em) {
+	.container {
+		@include container(12);
+		max-width: 73.75em;
+	}
+}

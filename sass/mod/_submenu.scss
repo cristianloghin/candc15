@@ -1,0 +1,127 @@
+.submenu_wrapper {
+	
+	width: 100%;
+
+	@include susy-breakpoint(64em) {
+		display: none;
+	}
+
+	@include susy-breakpoint(80em) {
+		display: block;
+		position: absolute;
+		z-index: 5;
+		pointer-events: none;
+	}
+
+	.submenu_container {
+		
+		nav {
+			
+			position: relative;
+
+			/*
+			@include susy-breakpoint(64em) {
+				@include span(3 of 8 last);
+				margin-top: rhythm(1);
+			}
+			*/
+
+			@include susy-breakpoint(80em) {
+				@include span(3 of 12);
+				margin-top: $base-line-height;
+			}
+
+			pointer-events: auto;
+			.toggle_page_submenu {
+				
+				@include horizontal-border(bottom, $thin_border_weight, $orange);
+				
+				font-weight: 900;
+				color: $orange;
+				line-height: $base-line-height * 2;
+				
+				/*
+				@include susy-breakpoint(64em) {
+					border-top: $heavy_border;
+					line-height: $base-line-height * 2 - 3px;
+				}
+				*/
+
+				@include susy-breakpoint(80em) {
+					
+					@include add-border(top, $heavy_border_weight, $orange);
+				
+				}
+				span {
+					
+					float: right;
+					color: $dark_grey;
+					font-size: $large_text;
+
+					@include susy-breakpoint(80em) {
+						display: none;
+					}
+				}
+			}
+			ul {
+
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: none;			
+				width: 100%;
+
+				@include susy-breakpoint(80em) {
+					display: block;
+					@include horizontal-border(bottom, $heavy_border_weight, $orange);
+				}
+
+				li {
+					
+					background-color: $orange;
+					cursor: pointer;
+
+					@include transition-property(background-color);
+					@include transition-duration(.3s);
+					@include transition-timing-function(ease-out);
+
+					@include susy-breakpoint(80em) {
+						background-color: $white;
+					}
+					a {
+						
+						text-decoration: none;
+						color: $white;
+						font-weight: 300;
+						display: block;
+						padding: $unit * 2 $unit * 3;
+
+						@include susy-breakpoint(80em) {
+							color: $dark_grey;
+							font-weight: 400;
+							padding: $unit * 2 0;
+							font-size: $small_text;
+							line-height: $small_line;
+						}
+					}
+				}
+				li:hover {
+					background-color: $dark_red;
+					@include susy-breakpoint(80em) {
+						background-color: $background_grey;
+					}
+				}
+				li:not(:last-child) {
+					
+					@include horizontal-border(bottom, $thin_border_weight, $white);
+
+					@include susy-breakpoint(80em) {
+						&::after {
+							background-color: $orange;
+						}
+					}
+				}
+			}
+		}
+	}
+}

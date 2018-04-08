@@ -1,0 +1,56 @@
+.mod_tab {
+	
+
+	h3 {
+		
+		background-color: $light_grey;
+		color: $white;
+		text-transform: uppercase;
+		line-height: $base-line-height * 2;
+		font-size: 20px;
+		padding: 0 $unit * 2;
+		font-weight: 300;
+		cursor: pointer;
+		position: relative;
+
+		@include transition-property(background-color);
+		@include transition-duration(.3s);
+		@include transition-timing-function(ease-out);
+
+		
+		> span {
+			position: absolute;
+			top: 0;
+			right: $unit * 2;
+			font-size: 24px;
+		}
+		
+	}
+	h3:hover {
+		background-color: $orange;
+	}
+}
+.mod_tab + .mod_tab {
+	@include horizontal-border(top, $thin_border_weight, $white);
+}
+.mod_tab.open {
+	h3 {
+		background-color: $orange;
+	}
+}
+.mod_tab.closed {
+	.content {
+		display: none;
+	}
+}
+.mod_tab.bottom {
+	@include horizontal-border(top, $thin_border_weight, $light_grey);
+}
+.mod_tab.bottom.open {
+	&::after {
+		background-color: $orange;
+	}
+	h3 {
+		background-color: $light_grey;
+	}
+}

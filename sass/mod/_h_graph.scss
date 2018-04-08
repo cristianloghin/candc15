@@ -1,0 +1,38 @@
+.mod_h_graph {
+	
+	.row {
+		@include clearfix;
+		color: $dark_grey;
+
+		font-size: $small_text;
+		line-height: $small_line;
+
+		> div {
+			float: left;
+		}
+		> div:first-child {
+			width: 20%;
+		}
+		> div:nth-child(2) {
+			width: 50%;
+			div {
+				background-color: $dark_grey;
+			}
+		}
+		> div:last-child {
+			padding-left: $base-line-height / 2;
+		}
+	}
+
+	.row:last-child {
+		> div:nth-child(2) {
+			div {
+				background-color: $orange;
+			}
+		}
+	}
+
+	.row + .row {
+		margin-top: $base-line-height / 2;
+	}
+}

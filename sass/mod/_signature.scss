@@ -1,0 +1,20 @@
+.mod_signature {
+	
+	margin-top: $base-line-height * 2;
+
+	color: $dark_grey;
+	.intro {
+		margin-bottom: $base-line-height;
+	}
+	.people {
+		display: table;
+		div {
+			display: table-cell;
+			vertical-align: top;
+			width: 50%;
+		}
+	}
+	.date {
+		margin-top: $base-line-height;
+	}	
+}

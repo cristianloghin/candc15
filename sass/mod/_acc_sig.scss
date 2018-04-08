@@ -1,0 +1,28 @@
+.mod_acc_sig {
+	margin-top: $base-line-height * 2;
+	table {
+
+		td {
+			padding: 0;
+			text-align: left;
+		}
+		tr:first-child {
+			font-size: 1.125em;
+			font-weight: 700;
+			color: $grass_green;
+
+		}
+		tr:nth-child(2) {
+			font-weight: 700;
+			td {
+				padding-top: $base-line-height * .5;
+			}
+		}
+		tr:last-child td {
+			padding-top: $base-line-height * .5;
+		}
+		tr:hover {
+			background: transparent !important;
+		}
+	}
+}

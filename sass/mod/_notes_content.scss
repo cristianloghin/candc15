@@ -1,0 +1,73 @@
+.notes-table-3 {
+	tr {
+		td:not(:first-child),
+		th:not(:first-child) {
+			width: 15%;
+		}
+	}
+}
+.big_table_wrapper {
+	overflow: hidden;
+	padding: $base-line-height 0;
+	position: relative;
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		div {
+			width: 100px;
+			height: 100%;
+			background-size: 100% auto;
+			position: relative;
+			span {
+				position: absolute;
+				top: 50%;
+				margin-top: - $base-line-height;
+				color: $stone_grey;
+				font-size: 2em;
+				line-height: $base-line-height * 2;
+				height: $base-line-height * 2;
+				pointer-events: auto;
+				cursor: pointer;
+			}
+		}
+		.left {
+			display: none;
+			float: left;
+			background-image: url('/img/grad-left.png');
+			span {
+				left: 0;
+			}
+		}
+		.right {
+			float: right;
+			text-align: right;
+			background-image: url('/img/grad-right.png');
+			span {
+				right: 0;
+			}
+		}
+	}
+	.control {
+		width: auto;
+		position: relative;
+	}
+	.notes-table-16 {
+		tr {
+			td:not(:first-child),
+			th:not(:first-child) {
+				min-width: 60px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 75em) {
+	.notes-table-16 {
+		
+	}
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'icons-candc';
+  src: url('../font/icons-candc.eot');
+  src: url('../font/icons-candc.eot?#iefix') format('embedded-opentype'),
+       url('../font/icons-candc.woff') format('woff'),
+       url('../font/icons-candc.ttf') format('truetype'),
+       url('../font/icons-candc.svg#icons-candc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  font-family: "icons-candc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-large-download:before { content: '\e800'; } 
+.icon-menu-arrow-down:before { content: '\e801'; } 
+.icon-large-arrow-down:before { content: '\e802'; } 
+.icon-menu-arrow-up:before { content: '\e803'; } 
+.icon-plus:before { content: '\e804'; } 
+.icon-minus:before { content: '\e805'; } 
+.icon-info:before { content: '\e806'; } 
+.icon-open-menu:before { content: '\e80b'; } 
+.icon-large-arrow-right:before { content: '\e80c'; } 
+.icon-large-arrow-left:before { content: '\e80e'; } 
+.icon-close-menu:before { content: '\e80f'; } 

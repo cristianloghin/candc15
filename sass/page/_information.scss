@@ -1,0 +1,12 @@
+.shareholder-information {
+	.page_container {
+		margin-top: $base-line-height;
+		@include susy-breakpoint(80em) {
+			
+			width: span(10 of 12);
+			margin: auto;
+			margin-top: $base-line-height;
+			float: none;
+		}
+	}
+}

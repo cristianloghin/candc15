@@ -1,0 +1,101 @@
+.auditor-report {
+	img {
+		margin: $base-line-height * 2 0;
+	}
+}
+.accounting-policies {
+
+}
+
+.notes {
+	#tb-4-1 {
+
+	}
+	#tb-4-2 {
+		.row {
+			div:nth-child(2) {
+				text-align: left !important;
+			}
+		}
+	}
+	#tb-11-1,
+	#tb-11-2 {
+		.row {
+			div {
+				width: 50% !important;
+			}
+		}
+	}
+	#tb-11-2 {
+		@include horizontal-border(top, $thin_border_weight, $orange);
+	}
+	#tb-12-1 {
+		.row {
+			div {
+				width: 20% !important;
+			}
+		}
+	}
+	#tb-18-1 {
+		.row {
+			div:first-child {
+				width: 40% !important;
+			}
+			div:nth-child(2) {
+				width: 10% !important;
+				text-align: left !important;
+			}
+			div:nth-child(3) {
+				width: 20% !important;
+				text-align: left !important;
+			}
+			div:nth-child(4) {
+				width: 10% !important;
+				text-align: left !important;
+			}
+			div:nth-child(5),
+			div:nth-child(6) {
+				width: 10% !important;
+			}
+		}
+	}
+	#tb-23-1 {
+		.row {
+			div:first-child:not(.span_5) {
+				width: 40% !important;
+			}
+			div:nth-child(2),
+			div:nth-child(3) {
+				width: 20% !important;
+			}
+		}
+	}
+	#tb-27-1,
+	#tb-27-2 {
+		.row {
+			div:first-child:not(.span_4) {
+				width: 50% !important;
+			}
+			div:nth-child(2) {
+				width: 10% !important;
+			}
+			div:nth-child(3),
+			div:nth-child(4) {
+				width: 20% !important;
+			}
+		}
+	}
+}
+.financial-definitions {
+	.table {
+		.row {
+			div:first-child {
+				width: 20% !important;
+
+			}
+			div:last-child {
+				width: 80% !important;
+			}
+		}
+	}
+}

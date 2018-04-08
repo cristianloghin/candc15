@@ -1,0 +1,49 @@
+.mod_shared_info_3 {
+	h3 {
+		margin-bottom: $base-line-height;
+		max-height: $base-line-height;
+	}
+	.wrapper {
+		
+		.chart {
+			
+			height: $base-line-height * 12;
+			width: $base-line-height * 12;
+			
+		}
+		.legend {
+			
+			margin-top: $base-line-height;
+
+			div {
+				
+				height: $base-line-height;
+				line-height: $base-line-height;
+
+				span:first-child {
+					display: block;
+					float: left;
+					width: $base-line-height;
+					height: $base-line-height;
+					margin-right: 10px;
+					border-radius: $base-line-height / 2;
+					-moz-border-radius: $base-line-height / 2;
+					-webkit-border-radius: $base-line-height / 2;
+				}
+				span:last-child {
+					display: block;
+					float: right;
+				}
+			}
+			div + div {
+				border-top: 1px solid $light_background;
+				margin-top: $base-line-height * .5;
+				padding-top: $base-line-height * .5
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 75em) {
+	
+}

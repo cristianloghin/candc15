@@ -1,0 +1,291 @@
+.board-directors {
+	.committees {
+		@include clearfix;
+		@include horizontal-border(top, $heavy_border_weight, $orange);
+		@include add-border(bottom, $heavy_border_weight, $orange);
+		margin: $base-line-height 0;
+		padding: $base-line-height 0;
+		> div {
+			width: 25%;
+			float: left;
+			padding-right: $base-line-height;
+			h4 + p {
+				margin-top: $unit * 2;
+			}
+			p + p {
+				@include horizontal-border(top, $thin_border_weight, $orange);
+				margin-top: $unit;
+				padding-top: $unit;
+			}
+		}
+	}
+	.director {
+		@include clearfix;
+		padding-top: $base-line-height;
+		.image {
+			@include span(3 of 9);
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		> div:last-child {
+			@include span(6 of 9 last);
+			p {
+				margin-top: $unit * 2;
+			}
+		}
+	}
+	.director + .director {
+		@include horizontal-border(top, $thin_border_weight, $orange);
+		margin-top: $base-line-height;
+	}
+	.director + p {
+		@include horizontal-border(top, $thin_border_weight, $orange);
+		margin-top: $base-line-height;
+		padding-top: $base-line-height;
+	}
+}
+.director-report {
+	.table.col_3 {
+		.row {
+			div {
+				width: 40% !important;
+			}
+		}
+	}
+	.table.col_5 {
+		.row {
+			div:not(:first-child) {
+				width: 20% !important;
+			}
+		}
+	}
+	#note-1 {
+		span:last-child {
+			width: 500px;
+		}
+		
+	}
+}
+.director-statement-governance {
+	.message {
+		background-color: $background_grey;
+		padding: $base-line-height;
+		margin-bottom: $base-line-height;
+		.photo {
+			
+			@include span( 3 of 6 last);
+			
+			margin-left: $base-line-height;
+			margin-bottom: $base-line-height / 2;
+
+			@include susy-breakpoint(64em) {
+				@include span( 3 of 8 last);
+			}
+			
+			@include susy-breakpoint(80em) {
+				@include span( 4 of 9 last);
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.mod_signature {
+			margin-top: $base-line-height;
+		}
+		&:not(:first-child) {
+			margin-top: $base-line-height;
+		}
+	}
+	.table.col_4 {
+		margin: $base-line-height 0;
+		.row {
+			div {
+				width: 25%;
+			}
+			div:first-child {
+				width: 25%;
+			}
+			div:nth-child(2) {
+				width: 35%;
+			}
+		}
+		#note-2 {
+			span {
+				top: auto;
+				bottom: 20px;
+			}
+		}
+	}
+}
+.report-director-remuneration {
+	.message {
+		background-color: $background_grey;
+		padding: $base-line-height;
+		margin-bottom: $base-line-height;
+		.photo {
+			
+			@include span( 3 of 6 last);
+			
+			margin-left: $base-line-height;
+			margin-bottom: $base-line-height / 2;
+
+			@include susy-breakpoint(64em) {
+				@include span( 3 of 8 last);
+			}
+			
+			@include susy-breakpoint(80em) {
+				@include span( 4 of 9 last);
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.mod_signature {
+			margin-top: $base-line-height;
+		}
+	}
+	.large {
+		@include horizontal-border(bottom, $thin_border_weight, $orange);
+		padding-bottom: $base-line-height;
+	}
+	h3 + .mod_tab, .mod_tab + h3 {
+		margin-top: $base-line-height;
+	}
+	.table.col_2.text {
+		.row {
+			div:first-child {
+				width: 20%;
+			}
+			div:last-child {
+				width: 80%;
+			}
+			div {
+				p + p {
+					margin-top: $base-line-height / 2;
+				}
+			}
+		}
+	}
+	.table.col_3 {
+		.row {
+			div:first-child {
+				width: 40%;
+			}
+			div {
+				width: 30%;
+			}
+		}
+	}
+	.table.col_4 {
+		.row {
+			div {
+				width: 25%;
+				padding-right: $unit * 2;
+			}
+			div:first-child {
+				width: 25%;
+			}
+			div.span_2 {
+				width: 50%;
+				@include horizontal-border(bottom, $thin_border_weight, $orange);
+			}
+		}
+		#note-1 {
+			span {
+				top: auto;
+				bottom: 20px;
+			}
+		}
+	}
+	.table.col_13 {
+		.span_2 {
+			@include horizontal-border(bottom, $thin_border_weight, $orange);
+		}
+	}
+	#tb-2 {
+		.row {
+			div:nth-child(2) {
+				text-align: left;
+				width: 40%;
+			}
+		}
+	}
+	#tb-3 {
+		.span_7 {
+			width: 100% !important;
+		}
+		.row div:first-child {
+			width: 17%;
+		}
+		.row div:nth-child(2) {
+			width: 7%;
+		}
+		.row div:nth-child(3) {
+			width: 20%;
+		}
+		.row div:nth-child(4) {
+			width: 9%;
+		}
+		.row div:nth-child(5) {
+			width: 15%;
+		}
+		.row div:nth-child(6) {
+			width: 12%;
+		}
+		.row div:nth-child(7) {
+			width: 20%;
+		}
+	}
+	#tb-4 {
+		.row {
+			div:first-child {
+				width: 5%;
+			}
+			div:nth-child(4), div:nth-child(5) {
+				padding-left: $unit * 2;
+				width: 12% !important;
+			}
+			div:nth-child(8), div:nth:child(9) {
+				width: 7% !important;
+			}
+			div:not(:first-child) {
+				width: 9.5%;
+			}
+		}
+	}
+	#tb-5 {
+		.row {
+			div:first-child {
+				width: 10%;
+			}
+			div:nth-child(2) {
+				width: 30%;
+			}
+			div:nth-child(3), div:nth-child(4), div:nth-child(5) {
+				width: 20%;
+			}
+		}
+	}
+	#tb-6 {
+		.row {
+			div:first-child {
+				width: 15%;
+			}
+			div:nth-child(2) {
+				width: 15%;
+			}
+			div:nth-child(3), div:nth-child(4) {
+				width: 20%;
+			}
+			div:nth-child(5) {
+				width: 30%;
+			}
+		}
+	}
+}

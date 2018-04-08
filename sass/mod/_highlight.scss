@@ -1,0 +1,68 @@
+.mod_highlight {
+	
+	height: 1px;
+	overflow: hidden;
+	
+	margin: $base-line-height 0;
+
+	@include horizontal-border(top, $thin_border_weight, $orange);
+	@include add-border(bottom, $thin_border_weight, $orange);
+
+	.content:not(.txt_only) {
+		opacity: 0;
+		display: table;
+
+		.image {
+			
+			display: table-cell;
+			vertical-align: middle;
+			padding: $base-line-height 0;
+
+			width: span(2 of 6);
+
+			@include susy-breakpoint(64em) {
+				width: span(3 of 8);
+			}
+			
+			@include susy-breakpoint(80em) {
+				width: span(4 of 9);
+			}
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.text {
+			
+			display: table-cell;
+			vertical-align: middle;
+
+			padding: $base-line-height;
+			
+			text-align: center;
+		}
+	}
+	.content.txt_only {
+		.text {
+			width: span(4 of 6);
+			margin-left: auto;
+			margin-right: auto;
+			padding: $base-line-height 0;
+			text-align: center;
+
+			@include susy-breakpoint(64em) {
+				width: span(6 of 8);
+			}
+			@include susy-breakpoint(80em) {
+				width: span(7 of 9);
+			}
+		}
+	}
+}
+
+.mod_highlight.open {
+	.content {
+
+	}
+}

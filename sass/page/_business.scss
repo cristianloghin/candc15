@@ -1,0 +1,447 @@
+.operations-review {
+
+	.map {
+		height: $base-line-height * 20;
+		
+		@include susy-breakpoint(64em) {
+			height: $base-line-height * 26;
+		}
+		
+		@include susy-breakpoint(80em) {
+			height: $base-line-height * 24;
+		}
+		
+		width: 100%;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+			margin: auto;
+		}
+	}
+	.countries {
+		@include clearfix;
+		padding: $base-line-height 0 0 0;
+		ul {
+			width: 25%;
+			float: left;
+			padding: 0 $base-line-height / 2;
+			li {
+				margin-top: 0;
+			}
+		}
+		ul:first-child {
+			padding-left: 0;
+		}
+		ul:last-child {
+			padding-right: 0;
+		}
+	}
+
+	#bus-slider-1 {
+		.slide {
+			> h4 {
+				line-height: $base-line-height * 2;
+			}
+			.large {
+				@include horizontal-border(top, $heavy_border_weight, $orange);
+				@include add-border(bottom, $thin_border_weight, $orange);
+				line-height: $base-line-height * 3;
+			}
+		}
+	}
+
+	.ops_header {
+	
+		margin-bottom: $base-line-height;
+		display: table;
+		width: 100%;
+
+		.image {
+			display: table-cell;
+			vertical-align: top;
+			width: 50%;
+			position: relative;
+			overflow: hidden;
+			div {
+				position: absolute;
+				right: $base-line-height / 2;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.ops_table {
+			color: $dark_grey;
+			width: 50%;
+			display: table-cell;
+			vertical-align: top;
+			padding-left: $base-line-height / 2;
+
+			.row {
+				display: table;
+				padding: $unit 0;
+				width: 100%;
+
+				@include transition-property(background-color);
+				@include transition-duration(.3s);
+				@include transition-timing-function(ease-out);
+
+				div {
+					display: table-cell;
+					vertical-align: bottom;
+				}
+				div:not(:first-child) {
+					width: 20%;
+					text-align: right;
+				}
+				div:first-child {
+					width: 40%;
+				}
+			}
+
+			.row:not(.heading):hover {
+				background-color: $background_grey;
+			}
+			.heading {
+				font-size: $small_text;
+				line-height: $small_line;
+				color: $orange;
+			}
+			.heading:first-child {
+				@include horizontal-border(top, $thin_border_weight, $orange);
+			}
+			.light_line {
+				@include horizontal-border(bottom, $thin_border_weight, $orange);
+			}
+			.heavy_line {
+				@include horizontal-border(bottom, $heavy_border_weight, $orange);
+			}
+		}
+	}
+	#ireland-header .image  div { background-image: url('/img/pics/clonmel-1.jpg'); }
+	#scotland-header .image div { background-image: url('/img/pics/caledonia-1.jpg'); }
+	#brands-header .image div { background-image: url('/img/pics/magners-1.jpg'); }
+	#america-header .image div { background-image: url('/img/pics/woodchuck-1.jpg'); }
+	#export-header .image div { background-image: url('/img/pics/export-1.jpg'); }
+}
+
+.chairman-statement, .ceo-review, .cfo-review {
+	.banner {
+		@include clearfix;
+		@include horizontal-border(bottom, $thin_border_weight, $orange);
+		margin-bottom: $base-line-height * 2;
+		div {
+			width: 60%;
+			margin: auto;
+
+			@include susy-breakpoint(64em) {
+				width: 40%;
+			}
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+	.read_more {
+		margin: $base-line-height 0;
+	}
+}
+.strategic-report {
+
+	.arrow_row {
+		position: relative;
+		display: table;
+		width: 100%;
+		overflow: hidden;
+		
+		> div {
+			
+			display: table-cell;
+			position: relative;
+			vertical-align: middle;
+
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+
+				@include transition-property(background-color);
+				@include transition-duration(.3s);
+				@include transition-timing-function(ease-out);
+			}
+			&::before {
+				top: 0;
+				bottom: 50%;
+				-webkit-transform: skewX(25deg);
+				-moz-transform: skewX(25deg);
+				transform: skewX(25deg);
+				
+			}
+			&::after {
+				top: 50%;
+				bottom: 0;
+				-webkit-transform: skewX(-25deg);
+				-moz-transform: skewX(-25deg);
+				transform: skewX(-25deg);
+				
+			}
+		}
+
+		> div:first-child {
+			
+			p {
+				padding: $base-line-height 0;
+				margin-right: $base-line-height * 2;
+				margin-left: $base-line-height * 2;
+			}
+
+			&::before, &::after {
+				left: -15%;
+				right: 0;
+			}
+			
+		}
+
+		> div:last-child {
+			
+			ul, p {
+				padding: $base-line-height $base-line-height $base-line-height $base-line-height * 3;
+			}
+			&::before, &::after {
+				left: 2%;
+				right: -40%;
+			}
+		}	
+	}
+	.arrow_row + .arrow_row {
+		margin-top: $base-line-height / 2;
+	}
+
+
+	#bus-slider-1 {
+		
+
+		h4 {
+			margin-bottom: $base-line-height / 2;
+		}
+
+		.arrow_row {
+			> div:first-child {
+				
+				width: 50%;
+
+				p {
+					margin-top: 0 !important;	
+				
+				}
+				p + p {
+					@include horizontal-border(top, $thin_border_weight, $orange);
+				}
+
+				&::before, &::after {
+					background-color: $background_grey;
+				}
+				
+			}
+
+			> div:last-child {
+				
+				p {
+					color: $white;
+					font-size: 18px;
+					font-weight: 300;
+				}
+
+				width: 50%;
+				&::before, &::after {
+					background-color: $light_grey;
+				}
+			}	
+		}
+
+		.arrow_row:hover {
+			> div:last-child {
+				&::before, &::after {
+					background-color: $orange;
+				}
+			}
+		}
+
+		.slide#s-0 {
+			div:first-child {
+				display: table;
+				width: 100%;
+
+				> div:first-child {
+					width: 60%;
+					display: table-cell;
+					vertical-align: middle;
+					.intro {
+						padding: 0;
+						//color: $orange;
+					}
+				}
+
+				.infographic {
+					width: 40%;
+					display: table-cell;
+					vertical-align: middle;
+					div {
+						width: 80%;
+						margin: auto;
+						img {
+							width: 100%;
+							display: block;
+						}
+					}
+				}
+
+			}
+		}
+
+		.slide#s-1 {
+			.table {
+				@include horizontal-border(top, $thin_border_weight, $orange);
+				.row {
+					div:first-child {
+						width: 25%;
+					}
+					div:last-child {
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+
+	#bus-slider-2 {
+		h4 {
+			margin-top: 0;
+			margin-bottom: $base-line-height / 2;
+		}
+		.arrow_row {
+			> div:first-child {
+				
+				width: 35%;
+
+				p {
+					color: $white;
+					font-weight: 300;
+					font-size: 18px;
+				}
+
+				&::before, &::after {
+					background-color: $light_grey;
+				}
+				
+			}
+
+			> div:last-child {
+				
+				width: 65%;
+				&::before, &::after {
+					background-color: $background_grey;
+				}
+			}	
+		}
+
+		.arrow_row:hover {
+			> div:first-child {
+				&::before, &::after {
+					background-color: $orange;
+				}
+			}
+		}
+
+		.arrow_row + h4 {
+			margin-top: $base-line-height;
+		}
+		
+		.slide#s-0 {
+			h4 {
+				width: 35%;
+				float: left;
+			}
+			h4 + h4 {
+				width: 65%;
+				padding-left: $base-line-height * 3;
+			}
+			h4:nth-child(5) {
+				margin-top: $base-line-height;
+			}
+		}
+		.slide#s-1 {
+			.intro {
+				padding-top: 0;
+			}
+		}
+	}
+
+	#bus-slider-3 {
+		.slide#s-0 {
+			> div:first-child {
+				width: 50%;
+				float: left;
+				padding-right: $base-line-height / 2;
+			}
+			> div:last-child {
+				width: 50%;
+				float: left;
+				padding-left: $base-line-height / 2;
+			}
+		}
+		
+		.kpi_row {
+			display: table;
+			width: 100%;
+			padding: $base-line-height / 2 0;
+
+			> div {
+				display: table-cell;
+				vertical-align: top;
+			}
+			> div:first-child {
+				width: 25%;
+				padding-right: $base-line-height / 2;
+			}
+			> div:last-child {
+				width: 75%;
+				> p > span:first-child {
+					font-weight: bold;
+					font-size: $normal_text;
+					line-height: $normal_line;
+				}
+			}
+			.h_3 {
+				font-weight: bold;
+				color: $orange;
+				font-size: $normal_text;
+				line-height: $normal_line;
+			}
+			.h_4 {
+				font-size: $small_text;
+				color: $orange;
+			}
+		}
+		.light_line {
+			@include horizontal_border(bottom, $thin_border_weight, $orange);
+		}
+		.heavy_line {
+			@include horizontal_border(top, $heavy_border_weight, $orange);
+		}
+	}
+}
+
+.corporate-responsibility {
+	.table {
+		margin-bottom: $base-line-height;
+		width: 50%;
+	}
+	.read_more {
+		margin: $base-line-height 0;
+	}
+}

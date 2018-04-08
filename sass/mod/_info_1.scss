@@ -1,0 +1,78 @@
+.mod_shared_info_1 {
+	h3 {
+
+	}
+	.row {
+		.icon-arrow-up {
+			width: 20%;
+			display: block;
+			font-size: 3.5em;
+			color: $meadow_green;
+			line-height: $base-line-height * 4;
+			height: $base-line-height * 4;
+			float: left;
+			text-align: center;
+		}
+		.big-no {
+			line-height: $base-line-height * 4;
+			height: $base-line-height * 4;
+			float: left;
+			width: 80%;
+			display: block;
+			font-size: 4em;
+			color: $grass_green;
+		}
+		.date {
+			display: block;
+			width: 20%;
+			float: left;
+			text-align: center;
+			height: $base-line-height * 2;
+			line-height: $base-line-height * 2;
+			&.date-1 {
+				color: $grass_green;
+			}
+			&.date-2 {
+				color: $meadow_green;
+			}
+		}
+		.bar {
+			width: 50%;
+			display: block;
+			float: left;
+			height: $base-line-height * 2;
+			span {
+				margin-top: $base-line-height * .5;
+				height: $base-line-height;
+				display: block;
+			}
+			span.bar-1 {
+				background: $grass_green;
+			}
+			span.bar-2 {
+				background: $meadow_green;
+			}
+		}
+		.value {
+			width: 28%;
+			display: block;
+			float: right;
+			height: $base-line-height * 2;
+			line-height: $base-line-height * 2;
+			&.value-1 {
+				color: $grass_green;
+				font-weight: 700;
+				font-size: 1.125em;
+			}
+			&.value-2 {
+				color: $meadow_green;
+			}
+		} 
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.mod_shared_info_1 {
+	
+	}
+}

@@ -1,0 +1,29 @@
+.mod_shared_ico_txt {
+	padding: $base-line-height;
+	> span {
+		font-size: 5em;
+		height: $base-line-height * 4;
+		line-height: $base-line-height * 4;
+		display: block;
+		text-align: center;
+	}
+	> p {
+		margin-top: $base-line-height;
+		font-size: 1.25em;
+		line-height: $base-line-height * 1.25;
+		text-align: center;
+	}
+}
+@media screen and (min-width: 75em) {
+	.mod_shared_ico_txt {
+		> span {
+			font-size: 6em;
+			height: $base-line-height * 5;
+			line-height: $base-line-height * 5;
+		}
+		> p {
+			font-size: 1.5em;
+			line-height: $base-line-height * 1.5;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+$orange: #f38b00;
+$dark_red: #882201;
+$light_yellow: #fbc04e;
+$background_grey: #E7E7E0;
+$light_grey: #A7A7A0;
+$dark_grey: #575750;
+$white: #f9f9f9;
+
+$thin_border_weight: 1px;
+$heavy_border_weight: 3px;
+
+
+$thin_border: $thin_border_weight solid $orange;
+$heavy_border: $heavy_border_weight solid $orange;
+
+$unit: 5px;
+$base-line-height: $unit * 4;
+
+
+$normal_text: 16px;
+$normal_line: $base-line-height;
+$small_text: 13px;
+$small_line: $base-line-height * .75;
+$large_text: 26px;
+$large_line: $base_line_height * 1.5;
+$intro_text: 22px;
+$intro_line: $base_line_height * 1.5;
+$x_large_text: 48px;
+$x_large_line: $base_line_height * 2.5;
+$h1: 48px;
+$h1_line: $base-line-height * 2.5;
+$h2: 24px;
+$h2_line: $base_line_height * 1.5;
+$h3: 24px;
+$h3_line: $base_line_height * 1.5;
+$h4: 18px;
+$h4_line: $base_line_height;
+
+
+@mixin horizontal-border($position, $weight, $color) {
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: $weight;
+		background-color: $color;
+		@if $position == bottom {
+			bottom: 0;
+		}
+		@if $position == top {
+			top: 0;
+		}
+	}
+}
+
+@mixin add-border($position, $weight, $color) {
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: $weight;
+		background-color: $color;
+		@if $position == bottom {
+			bottom: 0;
+		}
+		@if $position == top {
+			top: 0;
+		}
+	}
+}
+
+@mixin clear-border() { &::after { display: none; } }

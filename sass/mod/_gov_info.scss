@@ -1,0 +1,31 @@
+.mod_gov_info {
+	
+	position: relative;
+
+	h2 {
+		font-size: 1.25em;
+		font-weight: bold;
+		line-height: $base-line-height * 4;
+	}
+	.icon {
+		position: absolute;
+		right: 0;
+		top: $base-line-height;
+		cursor: pointer;
+	}
+	.hidden {
+		display: none;
+		margin-top: $base-line-height;
+		border-top: 1px solid $light_background;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.mod_gov_info {
+
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="icons-candc" horiz-adv-x="1000" >
+<font-face font-family="icons-candc" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="large-download" unicode="&#xe800;" d="m619 786h-422v-867h637v652l-215 215z m10-57l148-148h-148v148z m-399-777v800h366v-204h204v-596h-570z m482 168h-393v159h33v-126h327v126h33v-159z m-55 233l-142-142-142 142 24 24 102-102v209h33v-209l102 102 23-24z" horiz-adv-x="1000" />
+<glyph glyph-name="menu-arrow-down" unicode="&#xe801;" d="m820 449l-320-320-320 320 48 47 272-272 272 272 48-47z" horiz-adv-x="1000" />
+<glyph glyph-name="large-arrow-down" unicode="&#xe802;" d="m508 180l-333 334 24 24 309-309 309 309 24-24-333-334z" horiz-adv-x="1000" />
+<glyph glyph-name="menu-arrow-up" unicode="&#xe803;" d="m180 176l320 320 320-320-48-47-272 273-272-273-48 47z" horiz-adv-x="1000" />
+<glyph glyph-name="plus" unicode="&#xe804;" d="m867 333h-334v-366h-66v366h-334v67h334v333h66v-333h334v-67z" horiz-adv-x="1000" />
+<glyph glyph-name="minus" unicode="&#xe805;" d="m798 333h-600v67h600v-67z" horiz-adv-x="1000" />
+<glyph glyph-name="icon-info" unicode="&#xe806;" d="m500-112c-255 0-462 207-462 462s207 462 462 462 462-207 462-462-207-462-462-462z m0 877c-229 0-415-186-415-415s186-415 415-415 415 186 415 415-186 415-415 415z m40-130h-80v-87h80v87z m-7-511v355h-161v-59h95v-296h-95v-59h258v59h-97z" horiz-adv-x="1000" />
+<glyph glyph-name="open-menu" unicode="&#xe80b;" d="m833 550h-666v67h666v-67z m0-400h-666v-67h666v67z m0 233h-666v-66h666v66z" horiz-adv-x="1000" />
+<glyph glyph-name="large-arrow-right" unicode="&#xe80c;" d="m670 359l-333-333-24 24 309 309-309 309 24 24 333-333z" horiz-adv-x="1000" />
+<glyph glyph-name="large-arrow-left" unicode="&#xe80e;" d="m313 359l333 333 24-24-309-309 309-309-24-24-333 333z" horiz-adv-x="1000" />
+<glyph glyph-name="close-menu" unicode="&#xe80f;" d="m783 20l-285 285-285-285-47 47 285 285-285 285 47 47 285-285 285 285 47-47-285-285 285-285-47-47z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
